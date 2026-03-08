@@ -3,6 +3,8 @@
 - 基于 Node.js 的 QQ 农场自动化工具，支持多账号管理、Web 控制面板、实时日志与数据分析。
 - 基于[Penty-d/qq-farm-bot-ui](https://github.com/Penty-d/qq-farm-bot-ui)项目二开
 - 参考[wjnnone/qq-farm-bot](https://github.com/wjnnone/qq-farm-bot)部分代码，感谢wjnnone！
+- 感谢[sulimu2/qq-farm-bot](https://github.com/sulimu2/qq-farm-bot)大佬提供的新版协议思路
+- 建议自己拉项目部署，没有测试过打包的Windows端和Mac端，docker后续整！
 - 更新优化日志详见update.log 感谢支持，喜欢的点一个start吧！
 ## 技术栈
 
@@ -28,6 +30,9 @@
 ---
 
 ## 功能特性
+### 功能截图
+<img src="https://picui.ogmua.cn/s1/2026/03/08/69ad4e2b4a55b.webp"  alt="图片失效"/>
+<img src="https://picui.ogmua.cn/s1/2026/03/08/69ad4e2b4b222.webp"  alt="图片失效"/>
 
 ### 多账号管理
 - 账号新增、编辑、删除、启动、停止
@@ -124,13 +129,14 @@ pnpm package:release
 ```
 
 产物输出在 `dist/` 目录：
+- `产物在Releases中也可以下载，无需自己构建`
 
 | 平台 | 文件名 |
 |------|--------|
-| Windows x64 | `qq-farm-bot-win-x64.exe` |
-| Linux x64 | `qq-farm-bot-linux-x64` |
-| macOS Intel | `qq-farm-bot-macos-x64` |
-| macOS Apple Silicon | `qq-farm-bot-macos-arm64` |
+| Windows x64 | `qq-farm-bot.exe` |
+| Linux x64 | `qq-farm-bot` |
+| macOS Intel | `qq-farm-bot-x64` |
+| macOS Apple Silicon | `qq-farm-bot-arm64` |
 
 ### 运行
 
@@ -139,7 +145,7 @@ pnpm package:release
 .\qq-farm-bot-win-x64.exe
 
 # Linux / macOS
-chmod +x ./qq-farm-bot-linux-x64 && ./qq-farm-bot-linux-x64
+chmod +x ./qq-farm-bot && ./qq-farm-bot
 ```
 
 程序会在可执行文件同级目录自动创建 `data/` 并写入 `store.json`、`accounts.json`。
@@ -149,7 +155,7 @@ chmod +x ./qq-farm-bot-linux-x64 && ./qq-farm-bot-linux-x64
 ## 登录与安全
 
 - 面板首次访问需要登录
-- 默认管理密码：`admin`
+- 默认管理账号：`admin/admin`
 - **建议部署后立即修改为强密码**
 
 ---

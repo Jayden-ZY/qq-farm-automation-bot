@@ -53,8 +53,8 @@ const DEFAULT_ACCOUNT_CONFIG = {
     preferredSeedId: 0,
     intervals: {
         farm: 2,
-        farmMin: 2,
-        farmMax: 5,
+        farmMin: 5,
+        farmMax: 10,
         // 好友巡查：帮助和偷菜各自独立的间隔
         helpMin: 10,
         helpMax: 15,
@@ -84,9 +84,9 @@ const DEFAULT_ACCOUNT_CONFIG = {
     // 自己农田种植时每块地间隔秒数（0=使用默认50ms）
     plantDelaySeconds: 2,
     // 化肥购买类型：organic（有机）或 inorganic（无机）
-    fertilizerBuyType: 'organic',
+    fertilizerBuyType: 'inorganic',
     // 化肥购买数量（0=不限制，购买到点券不足为止）
-    fertilizerBuyCount: 1,
+    fertilizerBuyCount: 10,
 };
 const ALLOWED_AUTOMATION_KEYS = new Set(Object.keys(DEFAULT_ACCOUNT_CONFIG.automation));
 

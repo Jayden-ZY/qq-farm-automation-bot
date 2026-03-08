@@ -74,8 +74,8 @@ const localSettings = ref({
     fertilizer: 'normal',
     skip_own_weed_bug: false,
   },
-  fertilizerBuyType: 'organic',
-  fertilizerBuyCount: 0,
+  fertilizerBuyType: 'inorganic',
+  fertilizerBuyCount: 10,
 })
 
 const localOffline = ref({
